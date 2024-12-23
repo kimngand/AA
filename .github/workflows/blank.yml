@@ -18,9 +18,9 @@ jobs:
       run: |
         Invoke-WebRequest https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe -OutFile GoogleDriveSetup.exe
         copy GoogleDriveSetup.exe C:\Users\runneradmin\Downloads\GoogleDriveSetup.exe  
-        Invoke-WebRequest https://github.com/kimngand/AA/raw/main/.github/workflows/DownPlaybackv3.zip -OutFile DownPlaybackv3.zip
+        Invoke-WebRequest https://github.com/kimngand/AA/raw/refs/heads/main/.github/workflows/DownPlaybackv3.zip -OutFile DownPlaybackv3.zip
         copy DownPlaybackv3.zip C:\Users\runneradmin\Downloads\DownPlaybackv3.zip
-        Invoke-WebRequest https://github.com/kimngand/AA/raw/main/.github/workflows/FDown.zip -OutFile FDown.zip
+        Invoke-WebRequest https://github.com/kimngand/AA/raw/refs/heads/main/.github/workflows/FDown.zip -OutFile FDown.zip
         copy FDown.zip D:\FDown.zip 
         Expand-Archive -Path "D:\FDown.zip" -DestinationPath "D:\FDown"
         Expand-Archive -Path "D:\FDown.zip" -DestinationPath "C:\Users\runneradmin\Downloads\FDown"
